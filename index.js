@@ -1,4 +1,6 @@
 'use strict';
-const Blinker = require('./actions/blinker');
-let blinker = new Blinker({thing: 'some_thing'});
-blinker.blink(100, 100);
+const Lights = require('./actions/lights');
+const thing = 'my_tessel';
+
+let lights = new Lights(thing);
+lights.blink(1000, 20);
